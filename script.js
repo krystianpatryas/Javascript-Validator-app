@@ -62,11 +62,11 @@ const checkErrors = () => {
 		if (box.classList.contains('error')) {
 			errorCount++;
 		}
-
-		if (errorCount === 0) {
-			popup.classList.add('show-popup');
-		}
 	});
+
+	if (errorCount === 0) {
+		popup.classList.add('show-popup');
+	}
 };
 
 sendBtn.addEventListener('click', e => {
